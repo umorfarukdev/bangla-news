@@ -19,13 +19,12 @@ const NewsDetailsPage = async ({ params }: PageProps) => {
     hour12: true,
   });
   const { newsId } = await params;
-  console.log(newsId);
+
   const res = await fetch(
     `https://news-api-v2.vercel.app/api/article/${newsId}`,
   );
   const data = await res.json();
   const news: NewsDetails = data.data;
-  console.log(news);
 
   if (!news) {
     notFound();

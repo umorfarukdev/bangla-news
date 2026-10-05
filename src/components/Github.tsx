@@ -3,15 +3,17 @@ import React from "react";
 
 const Github = () => {
   const handleSignInGitHub = async () => {
-    const data = await signIn.social({
+    await signIn.social({
       provider: "github",
       callbackURL: "/",
     });
-    console.log(data);
   };
   return (
     <div>
-      <button onClick={handleSignInGitHub} className="btn w-full bg-black text-white border-black">
+      <button
+        onClick={handleSignInGitHub}
+        className="btn w-full bg-black text-white border-black"
+      >
         <svg
           aria-label="GitHub logo"
           width="16"

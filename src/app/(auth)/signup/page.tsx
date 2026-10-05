@@ -13,7 +13,7 @@ const SignUp = () => {
       email: string;
       password: string;
     };
-    // console.log(user);
+
 
     const { data, error } = await signUp.email({
       ...user,
@@ -29,11 +29,11 @@ const SignUp = () => {
     // });
 
     if (data) {
-      console.log("user data", data, error);
+
       redirect("/");
     }
     if (error) {
-      console.log(error.message);
+
     }
   };
 

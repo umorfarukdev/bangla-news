@@ -20,12 +20,10 @@ const Profile = () => {
       image: string;
     };
 
-    const { data } = await updateUser({
+    await updateUser({
       name: user.name,
       image: user.image,
     });
-
-    console.log(data);
   };
 
   const handleShowForm = () => {

@@ -1,14 +1,13 @@
-"use client"
+"use client";
 
 import { signIn } from "@/lib/auth-client";
 
 const Google = () => {
   const handleSignInGoogle = async () => {
-    const data = await signIn.social({
+    await signIn.social({
       provider: "google",
-      callbackURL: "/"
+      callbackURL: "/",
     });
-    console.log(data);
   };
 
   return (

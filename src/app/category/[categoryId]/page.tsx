@@ -10,7 +10,6 @@ interface PageProps {
 
 const CategoryNews = async ({ params }: PageProps) => {
   const { categoryId } = await params;
-  console.log(categoryId);
   const res = await fetch(
     `https://news-api-v2.vercel.app/api/category/${categoryId}`,
   );

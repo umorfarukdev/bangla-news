@@ -27,11 +27,9 @@ const SignIn = () => {
     });
 
     if (data) {
-      console.log("user data", data, error);
       redirect("/");
     }
     if (error) {
-      console.log(error.message);
     }
   };
 

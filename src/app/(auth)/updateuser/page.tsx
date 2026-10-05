@@ -5,20 +5,19 @@ import React from "react";
 
 const UpdateUser = () => {
   const router = useRouter();
-  const handleUpdate = async (e: React.SubmitEvent<HTMLElement>) => {
+  const handleUpdate = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const formData = new FormData(e.target);
+    const formData = new FormData(e.currentTarget);
     const user = Object.fromEntries(formData.entries()) as {
       name: string;
       image: string;
     };
 
-    const {data} = await updateUser({
+    await updateUser({
       name: user.name,
       image: user.image,
     });
 
-    console.log(data);
     router.push("/profile");
   };
 
