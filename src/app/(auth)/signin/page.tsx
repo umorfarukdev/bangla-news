@@ -30,6 +30,7 @@ const SignIn = () => {
       redirect("/");
     }
     if (error) {
+      console.log(error.message);
     }
   };
 

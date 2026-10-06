@@ -32,7 +32,7 @@ export default async function Home() {
             {
               otherSection.map(otherNews => <div key={otherNews.curationId} >
                 <h1 className="my-4 mb-4 text-2xl font-bold border-b-4 border-red-700">{otherNews.title}</h1>
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {
                     otherNews.articles.map(news => <SecNewsCard key={news.id} news={news}></SecNewsCard>)
                   }

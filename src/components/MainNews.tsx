@@ -20,7 +20,7 @@ const MainNews = ({ mainNews }: { mainNews: News[] }) => {
 
   return (
     <div className="">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Link href={`/news/${firstNews.id}`}>
           <figure className="rounded-2xl">
             <Image

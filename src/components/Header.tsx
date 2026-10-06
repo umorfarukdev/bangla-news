@@ -9,8 +9,11 @@ const Header = () => {
   });
   return (
     <header>
-      <div className="flex justify-end gap-40 container mx-auto my-6">
-        <div className="flex items-center gap-3 self-center">
+      <div className="container mx-auto my-6 relative flex items-center justify-end px-4">
+        <div
+          className="flex items-center gap-3
+    md:absolute md:left-1/2 md:-translate-x-1/2"
+        >
           <Image src={"/logo.webp"} alt="" width={50} height={50} />
           <div>
             <h1>Bangla News</h1>
