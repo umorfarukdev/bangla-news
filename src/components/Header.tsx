@@ -16,7 +16,7 @@ const Header = () => {
         >
           <Image src={"/logo.webp"} alt="" width={50} height={50} />
           <div>
-            <h1>Bangla News</h1>
+            <h1>বাংলা নিউজ</h1>
             <p>{date}</p>
           </div>
         </div>
